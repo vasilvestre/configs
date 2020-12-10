@@ -1,0 +1,1 @@
+if ! shopt -oq posix;
