@@ -18,6 +18,7 @@
         ]
     },
     "actions":
+    [
         { "command": { "action": "splitPane", "split": "vertical" }, "keys": "alt+shift+plus" },
         { "command": { "action": "splitPane", "split": "horizontal" }, "keys": "alt+shift+-" },
         { "command": { "action": "splitPane", "split": "auto" }, "keys": "alt+shift+|" },
