@@ -116,3 +116,6 @@ fi
 export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
 export GDK_DPI_SCALING=1.5
 export GDK_SCALE=1
+
+# Misc
+bind 'set bell-style none' # This stop tab sound effect in cmd
