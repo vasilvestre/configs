@@ -1,0 +1,2 @@
+# in case of UI bad rendering
+-Dremote.x11.workaround=false
