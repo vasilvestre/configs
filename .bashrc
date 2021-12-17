@@ -117,5 +117,23 @@ export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
 export GDK_DPI_SCALING=1.5
 export GDK_SCALE=1
 
+#GWSL
+export LIBGL_ALWAYS_INDIRECT=1 #GWSL
+export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0 #GWSL
+export PULSE_SERVER=tcp:$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}') #GWSL
+export QT_SCALE_FACTOR=2 #GWSL
+
+# JetBrains
+export PATH="/home/ubuntu/.local/share/JetBrains/Toolbox:$PATH"
+
+# Composer
+export PATH="/home/ubuntu/.composer/vendor/bin:$PATH"
+
+# Kubernetes stuff
+source <(kubectl completion bash)
+
+# Symfony (see https://github.com/bamarni/symfony-console-autocomplete)
+eval "$(symfony-autocomplete)"
+
 # Misc
 bind 'set bell-style none' # This stop tab sound effect in cmd
